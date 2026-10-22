@@ -166,7 +166,7 @@ document.querySelectorAll(".rate-button").forEach(button => {
   button.addEventListener("click", () => showSample(activeSample, button.dataset.rate));
 });
 sampleVideo.addEventListener("error", () => {
-  document.querySelector("#rate-description").textContent = "The preview could not be loaded. Download the annotations below to explore the dataset.";
+  document.querySelector("#rate-description").textContent = "The video preview could not be loaded.";
 });
 
 const citations = {
