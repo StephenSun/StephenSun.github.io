@@ -1,0 +1,46 @@
+{
+  "recording": "fold5_room17_mix008",
+  "split": "eval-tau",
+  "source_video": "video_eval/eval-tau/fold5_room17_mix008.mp4",
+  "source_audio": "foa_eval/eval-tau/fold5_room17_mix008.wav",
+  "start_seconds": 67.8,
+  "end_seconds": 77.8,
+  "duration_seconds": 10,
+  "audio_file": "room17-foa.wav",
+  "channel_order": "ACN",
+  "normalization": "SN3D",
+  "sample_rate": 24000,
+  "channels": [
+    "W",
+    "Y",
+    "Z",
+    "X"
+  ],
+  "samples_per_channel": 240000,
+  "sha256": "839ab8277474532f6024540d00de4ed2b5b58d634e155c2a8a4c02e4d92f1bd2",
+  "video_variants": [
+    "room17-1hz.mp4",
+    "room17-10hz.mp4"
+  ],
+  "10hz_source": "fold5_room17_mix008_10hz_no_id.mp4",
+  "1hz_labels": "person_only_json_v1/eval-tau_person.json",
+  "1hz_annotation_ticks": [
+    676,
+    684,
+    694,
+    707,
+    714,
+    726,
+    734,
+    744,
+    754,
+    767,
+    774
+  ],
+  "1hz_display": "Hold the last annotation at its actual timestamp until the next annotated frame. Background video remains at 10 fps.",
+  "identity_text": false,
+  "timestamp_verification": {
+    "method": "W-channel correlation over preview seconds 1-9 against the original FOA excerpt",
+    "correlation": 0.9998478075771339
+  }
+}

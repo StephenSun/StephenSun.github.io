@@ -1,0 +1,49 @@
+{
+  "recording": "fold4_room23_mix007",
+  "split": "dev-test-sony",
+  "source_audio": "foa_dev/dev-test-sony/fold4_room23_mix007.wav",
+  "source_video": "video_dev/dev-test-sony/fold4_room23_mix007.mp4",
+  "start_seconds": 110.0,
+  "end_seconds": 120.1,
+  "duration_seconds": 10.1,
+  "audio_file": "moving-person-foa.wav",
+  "sample_rate": 24000,
+  "channels": [
+    "W",
+    "Y",
+    "Z",
+    "X"
+  ],
+  "channel_order": "ACN",
+  "normalization": "SN3D",
+  "samples_per_channel": 242400,
+  "sha256": "93fbc3b4ff3906b63a4b00d4b4054b4fc7e7a0301726cb09ba333580c8d18893",
+  "timestamp_verification": {
+    "method": "normalized cross-correlation of preview seconds 1-9 against original W channel at native 24 kHz",
+    "sample_rate": 24000,
+    "reference_interval_seconds": [
+      1,
+      9
+    ],
+    "video_results": {
+      "moving-person-1hz.mp4": {
+        "offset_seconds": 110.0,
+        "correlation": 0.9998534868287916
+      },
+      "moving-person-10hz.mp4": {
+        "offset_seconds": 110.0,
+        "correlation": 0.9998534868287916
+      }
+    }
+  },
+  "video_variants": [
+    "moving-person-1hz.mp4",
+    "moving-person-10hz.mp4"
+  ],
+  "video_mapping": {
+    "source_azimuth_degrees": "180 - 360 * horizontal_pixel / width",
+    "source_elevation_degrees": "90 - 180 * vertical_pixel / height"
+  },
+  "jsambisonics_commit": "eb6780af42ff4d33829f3ceb299160e45d06542f",
+  "hrtf_file": "../vendor/jsambisonics/aalto2016_N1.wav"
+}
