@@ -186,6 +186,20 @@ const citations = {
   publisher = {Zenodo},
   version   = {2.0},
   doi       = {10.5281/zenodo.23400590}
+}`,
+  "starss23": `@inproceedings{shimada2023starss23,
+  author    = {Shimada, Kazuki and Politis, Archontis and
+               Sudarsanam, Parthasaarathy and Krause, Daniel A. and
+               Uchida, Kengo and Adavanne, Sharath and Hakala, Aapo and
+               Koyama, Yuichiro and Takahashi, Naoya and Takahashi, Shusuke and
+               Virtanen, Tuomas and Mitsufuji, Yuki},
+  title     = {{STARSS23}: An Audio-Visual Dataset of Spatial Recordings of
+               Real Scenes with Spatiotemporal Annotations of Sound Events},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  pages     = {72931--72957},
+  year      = {2023},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/e6c9671ed3b3106b71cafda3ba225c1a-Abstract.html}
 }`
 };
 const citationCode = document.querySelector("#citation-code");
