@@ -170,22 +170,23 @@ sampleVideo.addEventListener("error", () => {
 });
 
 const citations = {
-  "1": `@dataset{sun2026avps360,
+  "paper": `@misc{sun2026avps360,
   author    = {Sun, Yifu and Sudarsanam, Parthasaarathy and
                Virtanen, Tuomas and Politis, Archontis},
-  title     = {AVPS-360: Audio-Visual Person Segmentation 360},
+  title     = {{AVPS-360}: A Spatial Audio-Visual Benchmark for Instance
+               Segmentation and Tracking of Sound-Producing Persons},
   year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.22688483}
+  note      = {Preprint},
+  url       = {https://stephensun.github.io/AVPS-360/paper.pdf}
 }`,
-  "10": `@dataset{sun2026avps360hfr,
+  "data": `@dataset{sun2026avps360annotations,
   author    = {Sun, Yifu and Sudarsanam, Parthasaarathy and
                Virtanen, Tuomas and Politis, Archontis},
-  title     = {AVPS-360-HFR: Audio-Visual Person Segmentation 360 - High Frame Rate},
+  title     = {{AVPS-360}: Audio-Visual Person Segmentation 360 (1 Hz and 10 Hz)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.0},
-  doi       = {10.5281/zenodo.23400590}
+  version   = {3.0},
+  doi       = {10.5281/zenodo.23761138}
 }`,
   "starss23": `@inproceedings{shimada2023starss23,
   author    = {Shimada, Kazuki and Politis, Archontis and

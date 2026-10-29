@@ -12,9 +12,9 @@
   <meta property="og:type" content="website">
   <title>AVPS-360: Audio-Visual Person Segmentation 360</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261029-release">
   <link rel="stylesheet" href="viewer.css">
-  <script src="app.js?v=20261023-citations" defer></script>
+  <script src="app.js?v=20261029-release" defer></script>
   <script src="panorama.js" type="module"></script>
 </head>
 <body>
@@ -50,6 +50,7 @@
         <div class="hero-actions">
           <a class="button button-accent" href="#examples"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg> Explore examples</a>
           <a class="button button-glass" href="#download"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg> Download annotations</a>
+          <a class="button button-glass" href="paper.pdf" target="_blank" rel="noopener noreferrer">Paper (PDF) <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="hero-bottom">
@@ -106,8 +107,8 @@
                 <tr><th scope="row">AVTrack</th><td data-label="Domain">Human</td><td data-label="Video">perspective</td><td data-label="Audio">mono</td><td data-label="#Videos">871</td><td data-label="Anno. FPS">1</td><td data-label="Len.">54.0 s</td><td data-label="Total">13.1 h</td><td data-label="#Frames">47,202</td><td data-label="Masks">36,216</td><td data-label="Cls">1</td><td data-label="Track"><span aria-label="Yes">✓</span></td></tr>
                 <tr><th scope="row">FAIR-Play (BiAVIS)</th><td data-label="Domain">Common</td><td data-label="Video">perspective</td><td data-label="Audio">binaural</td><td data-label="#Videos">1,364</td><td data-label="Anno. FPS">1</td><td data-label="Len." title="Duration of each annotated sample">1.0 s</td><td data-label="Total">3.7 h</td><td data-label="#Frames">13,304</td><td data-label="Masks">19,164</td><td data-label="Cls">8</td><td data-label="Track"><span aria-label="No">×</span></td></tr>
                 <tr><th scope="row">BiAVIS-Bench</th><td data-label="Domain">Common</td><td data-label="Video">perspective</td><td data-label="Audio">binaural</td><td data-label="#Videos">870</td><td data-label="Anno. FPS">1</td><td data-label="Len." title="Duration of each annotated sample">1.0 s</td><td data-label="Total">2.2 h</td><td data-label="#Frames">8,052</td><td data-label="Masks">8,656</td><td data-label="Cls">6</td><td data-label="Track"><span aria-label="No">×</span></td></tr>
-                <tr class="comparison-ours"><th scope="row">AVPS-360 (1 Hz, ours)</th><td data-label="Domain">Human</td><td data-label="Video">panoramic</td><td data-label="Audio">FOA</td><td data-label="#Videos">230</td><td data-label="Anno. FPS">1</td><td data-label="Len.">163.7 s</td><td data-label="Total">10.46 h</td><td data-label="#Frames">37,728</td><td data-label="Masks">31,679</td><td data-label="Cls">1</td><td data-label="Track"><span aria-label="Yes">✓</span></td></tr>
-                <tr class="comparison-ours comparison-hfr"><th scope="row">AVPS-360 (10 Hz, ours)</th><td data-label="Domain">Human</td><td data-label="Video">panoramic</td><td data-label="Audio">FOA</td><td data-label="#Videos">230</td><td data-label="Anno. FPS">10</td><td data-label="Len.">163.7 s</td><td data-label="Total">10.46 h</td><td data-label="#Frames">376,720</td><td data-label="Masks">260,016</td><td data-label="Cls">1</td><td data-label="Track"><span aria-label="Yes">✓</span></td></tr>
+                <tr class="comparison-ours"><th scope="row">AVPS-360 (1 Hz, ours)</th><td data-label="Domain">Human</td><td data-label="Video">panoramic</td><td data-label="Audio">FOA</td><td data-label="#Videos">230</td><td data-label="Anno. FPS">1</td><td data-label="Len.">163.7 s</td><td data-label="Total">10.46 h</td><td data-label="#Frames">37,718</td><td data-label="Masks">31,681</td><td data-label="Cls">1</td><td data-label="Track"><span aria-label="Yes">✓</span></td></tr>
+                <tr class="comparison-ours comparison-hfr"><th scope="row">AVPS-360 (10 Hz, ours)</th><td data-label="Domain">Human</td><td data-label="Video">panoramic</td><td data-label="Audio">FOA</td><td data-label="#Videos">230</td><td data-label="Anno. FPS">10</td><td data-label="Len.">163.7 s</td><td data-label="Total">10.46 h</td><td data-label="#Frames">376,590</td><td data-label="Masks">260,016</td><td data-label="Cls">1</td><td data-label="Track"><span aria-label="Yes">✓</span></td></tr>
               </tbody>
             </table>
           </div>
@@ -145,27 +146,28 @@
 
     <section class="section section-tinted" id="download" aria-labelledby="download-title">
       <div class="section-inner">
-        <div class="section-intro"><p class="eyebrow">DATA ACCESS</p><h2 id="download-title">Download annotations</h2><p>Two annotation releases, built on the same STARSS23 recordings.</p></div>
+        <div class="section-intro"><p class="eyebrow">DATA ACCESS</p><h2 id="download-title">Download annotations</h2><p>Development and evaluation labels at 1 Hz and 10 Hz, built on the same STARSS23 recordings.</p></div>
         <div class="release-grid">
-          <article class="release"><div class="release-top"><span class="release-kicker">AVPS-360</span><strong>1 <span>Hz</span></strong></div><h3>One frame per second</h3><p>Person masks, source identities and sound-event labels at a one-second annotation interval.</p><a class="button button-dark" href="https://zenodo.org/records/22688483" target="_blank" rel="noopener noreferrer">Download on Zenodo <span aria-hidden="true">↗</span></a><span class="release-file">AVPS-360_dev_annotations.json</span></article>
-          <article class="release"><div class="release-top"><span class="release-kicker">AVPS-360-HFR</span><strong>10 <span>Hz</span></strong></div><h3>One frame every 100 ms</h3><p>Person masks, source identities and sound-event labels at a 100 ms annotation interval.</p><a class="button button-dark" href="https://zenodo.org/records/23400590" target="_blank" rel="noopener noreferrer">Download HFR on Zenodo <span aria-hidden="true">↗</span></a><span class="release-file">AVPS-360_dev_annotations_HFR.json</span></article>
+          <article class="release"><div class="release-top"><span class="release-kicker">AVPS-360</span><strong>1 <span>Hz</span></strong></div><h3>One frame per second</h3><p>Person masks, source identities and sound-event labels at a one-second annotation interval.</p><div class="release-downloads"><a class="button button-dark" href="https://zenodo.org/records/23761138/files/AVPS-360_dev_annotations.json?download=1" target="_blank" rel="noopener noreferrer">Dev labels <span aria-hidden="true">↗</span></a><a class="button button-dark" href="https://zenodo.org/records/23761138/files/AVPS-360_eval_annotations.json?download=1" target="_blank" rel="noopener noreferrer">Eval labels <span aria-hidden="true">↗</span></a></div><span class="release-file">156 dev recordings · 74 eval recordings</span></article>
+          <article class="release"><div class="release-top"><span class="release-kicker">AVPS-360-HFR</span><strong>10 <span>Hz</span></strong></div><h3>One frame every 100 ms</h3><p>Person masks, source identities and sound-event labels at a 100 ms annotation interval.</p><div class="release-downloads"><a class="button button-dark" href="https://zenodo.org/records/23761138/files/AVPS-360_dev_annotations_HFR.json?download=1" target="_blank" rel="noopener noreferrer">Dev labels <span aria-hidden="true">↗</span></a><a class="button button-dark" href="https://zenodo.org/records/23761138/files/AVPS-360_eval_annotations_HFR.json?download=1" target="_blank" rel="noopener noreferrer">Eval labels <span aria-hidden="true">↗</span></a></div><span class="release-file">156 dev recordings · 74 eval recordings</span></article>
         </div>
-        <div class="release-table-wrap"><table class="release-table"><caption>Development and evaluation annotation statistics</caption><thead><tr><th scope="col">Release</th><th scope="col">Split</th><th scope="col">Recordings</th><th scope="col">Frames</th><th scope="col">Person masks</th><th scope="col">Person tracks</th></tr></thead><tbody><tr><th scope="row">1 Hz</th><td>Dev</td><td>156</td><td>25,424</td><td>20,734</td><td>340</td></tr><tr><th scope="row">1 Hz</th><td>Eval</td><td>74</td><td>12,304</td><td>10,945</td><td>168</td></tr><tr class="release-group-start"><th scope="row">10 Hz</th><td>Dev</td><td>156</td><td>253,952</td><td>171,268</td><td>340</td></tr><tr><th scope="row">10 Hz</th><td>Eval</td><td>74</td><td>122,768</td><td>88,748</td><td>168</td></tr></tbody></table></div>
-        <p class="release-note">Downloads contain development annotations. Evaluation annotations are not included. Each release covers 230 recordings across the development and evaluation sets.</p>
-        <div class="source-download"><div><h3>Get the source audio and video</h3><p>Download <code>foa_dev.zip</code> and <code>video_dev.zip</code> from STARSS23. AVPS-360 provides the additional annotations; recording filename stems connect the two resources.</p></div><a class="text-link" href="https://doi.org/10.5281/zenodo.7880637" target="_blank" rel="noopener noreferrer">STARSS23 recordings <span aria-hidden="true">↗</span></a></div>
+        <div class="release-table-wrap"><table class="release-table"><caption>Development and evaluation annotation statistics</caption><thead><tr><th scope="col">Release</th><th scope="col">Split</th><th scope="col">Recordings</th><th scope="col">Frames</th><th scope="col">Person masks</th><th scope="col">Person tracks</th></tr></thead><tbody><tr><th scope="row">1 Hz</th><td>Dev</td><td>156</td><td>25,424</td><td>20,734</td><td>340</td></tr><tr><th scope="row">1 Hz</th><td>Eval</td><td>74</td><td>12,294</td><td>10,947</td><td>168</td></tr><tr class="release-group-start"><th scope="row">10 Hz</th><td>Dev</td><td>156</td><td>253,952</td><td>171,268</td><td>340</td></tr><tr><th scope="row">10 Hz</th><td>Eval</td><td>74</td><td>122,638</td><td>88,748</td><td>168</td></tr></tbody></table></div>
+        <p class="release-note">Development and evaluation annotations are publicly available at both rates. All image paths use JPG filenames. The 10 Hz evaluation timeline is aligned to the common audio/video interval. <a href="https://zenodo.org/records/23761138" target="_blank" rel="noopener noreferrer">Release record and metadata ↗</a></p>
+        <div class="source-download"><div><h3>Get the source audio and video</h3><p>Download <code>foa_dev.zip</code>, <code>video_dev.zip</code>, <code>foa_eval.zip</code> and <code>video_eval.zip</code> from STARSS23. AVPS-360 provides the additional annotations; recording filename stems connect the two resources.</p></div><a class="text-link" href="https://doi.org/10.5281/zenodo.7880637" target="_blank" rel="noopener noreferrer">STARSS23 recordings <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
     <section class="section section-citation" id="citation" aria-labelledby="citation-title">
-      <div class="citation-heading"><div><p class="eyebrow">ACKNOWLEDGEMENTS &amp; CITATION</p><h2 id="citation-title">Citation</h2></div><p>Please cite the annotation release you use and STARSS23 for the source recordings. Follow the licence terms of each resource.</p></div>
-      <div class="citation-toolbar"><div class="citation-tabs" role="group" aria-label="Citation source"><button type="button" class="citation-tab is-active" data-citation="1" aria-pressed="true">AVPS-360</button><button type="button" class="citation-tab" data-citation="10" aria-pressed="false">AVPS-360-HFR</button><button type="button" class="citation-tab" data-citation="starss23" aria-pressed="false">STARSS23</button></div><button class="copy-button" id="copy-citation" type="button">Copy BibTeX <span aria-hidden="true">⧉</span></button></div>
-      <pre class="citation-code"><code id="citation-code">@dataset{sun2026avps360,
+      <div class="citation-heading"><div><p class="eyebrow">ACKNOWLEDGEMENTS &amp; CITATION</p><h2 id="citation-title">Citation</h2></div><p>Please cite the AVPS-360 paper, the annotation release you use, and STARSS23 for the source recordings. Follow the licence terms of each resource.</p></div>
+      <div class="citation-toolbar"><div class="citation-tabs" role="group" aria-label="Citation source"><button type="button" class="citation-tab is-active" data-citation="paper" aria-pressed="true">Paper</button><button type="button" class="citation-tab" data-citation="data" aria-pressed="false">Annotations</button><button type="button" class="citation-tab" data-citation="starss23" aria-pressed="false">STARSS23</button></div><button class="copy-button" id="copy-citation" type="button">Copy BibTeX <span aria-hidden="true">⧉</span></button></div>
+      <pre class="citation-code"><code id="citation-code">@misc{sun2026avps360,
   author    = {Sun, Yifu and Sudarsanam, Parthasaarathy and
                Virtanen, Tuomas and Politis, Archontis},
-  title     = {AVPS-360: Audio-Visual Person Segmentation 360},
+  title     = {{AVPS-360}: A Spatial Audio-Visual Benchmark for Instance
+               Segmentation and Tracking of Sound-Producing Persons},
   year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.22688483}
+  note      = {Preprint},
+  url       = {https://stephensun.github.io/AVPS-360/paper.pdf}
 }</code></pre>
       <span id="copy-status" class="sr-only" role="status"></span>
     </section>
