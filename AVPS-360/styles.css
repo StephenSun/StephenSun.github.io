@@ -85,5 +85,5 @@ img{height:auto}.audio-preview-note{margin:4px 0 0;font-size:13px;color:var(--mu
 .sample-slide-button{display:flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;background:none}
 .sample-slide-button::before{content:"";width:7px;height:7px;border-radius:50%;background:#b8cac1;transition:background .18s,box-shadow .18s}
 .sample-slide-button:hover::before{background:var(--teal)}
-.release-downloads{display:flex;flex-wrap:wrap;gap:10px}
+.release-downloads{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 0 28px}
 .sample-slide-button[aria-pressed="true"]::before{background:var(--teal);box-shadow:0 0 0 3px rgba(35,107,102,.12)}

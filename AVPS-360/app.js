@@ -179,23 +179,6 @@ const citations = {
   note      = {Preprint},
   url       = {https://stephensun.github.io/AVPS-360/paper.pdf}
 }`,
-  "1": `@dataset{sun2026avps360annotations,
-  author    = {Sun, Yifu and Sudarsanam, Parthasaarathy and
-               Virtanen, Tuomas and Politis, Archontis},
-  title     = {AVPS-360: Audio-Visual Person Segmentation 360},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.22688483}
-}`,
-  "10": `@dataset{sun2026avps360hfr,
-  author    = {Sun, Yifu and Sudarsanam, Parthasaarathy and
-               Virtanen, Tuomas and Politis, Archontis},
-  title     = {AVPS-360-HFR: Audio-Visual Person Segmentation 360 - High Frame Rate},
-  year      = {2026},
-  publisher = {Zenodo},
-  version   = {2.0},
-  doi       = {10.5281/zenodo.23400590}
-}`,
   "starss23": `@inproceedings{shimada2023starss23,
   author    = {Shimada, Kazuki and Politis, Archontis and
                Sudarsanam, Parthasaarathy and Krause, Daniel A. and

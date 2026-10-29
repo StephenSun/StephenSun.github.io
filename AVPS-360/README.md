@@ -9,11 +9,10 @@ The page presents the task, dataset statistics, and 1 Hz / 10 Hz video demos wit
 ## Annotation releases
 
 - [Paper PDF](https://stephensun.github.io/AVPS-360/paper.pdf)
-- [1 Hz annotations, V1](https://zenodo.org/records/22688483)
-- [10 Hz annotations, V2](https://zenodo.org/records/23400590)
-- [STARSS23 source recordings](https://doi.org/10.5281/zenodo.7880637)
+- [1 Hz and 10 Hz annotations, V2](https://zenodo.org/records/23400590)
+- [STARSS23 source recordings](https://zenodo.org/records/23735039)
 
-V1 contains the 1 Hz annotations; V2 contains the 10 Hz annotations.
+V2 contains both 1 Hz and 10 Hz annotations for the development and evaluation sets.
 
 ## Website
 
