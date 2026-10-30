@@ -8,7 +8,7 @@ The page presents the task, dataset statistics, and 1 Hz / 10 Hz video demos wit
 
 ## Annotation releases
 
-- [Paper PDF](https://stephensun.github.io/AVPS-360/paper.pdf)
+- [Paper on arXiv](https://arxiv.org/abs/2610.40480)
 - [1 Hz and 10 Hz annotations, V2](https://zenodo.org/records/23400590)
 - [STARSS23 source recordings](https://zenodo.org/records/23735039)
 

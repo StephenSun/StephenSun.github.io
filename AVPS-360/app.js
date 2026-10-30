@@ -176,8 +176,10 @@ const citations = {
   title     = {{AVPS-360}: A Spatial Audio-Visual Benchmark for Instance
                Segmentation and Tracking of Sound-Producing Persons},
   year      = {2026},
-  note      = {Preprint},
-  url       = {https://stephensun.github.io/AVPS-360/paper.pdf}
+  eprint    = {2610.40480},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url       = {https://arxiv.org/abs/2610.40480}
 }`,
   "starss23": `@inproceedings{shimada2023starss23,
   author    = {Shimada, Kazuki and Politis, Archontis and
